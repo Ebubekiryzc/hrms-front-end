@@ -9,6 +9,7 @@
 
 - [First Commit](#first-commit)
 - [Component Diagram](#component-diagram)
+- [Usage](#usage)
 
 </details>
 <hr>
@@ -25,6 +26,8 @@
 ## Component Diagram
 
 ![componentdiagram](https://raw.githubusercontent.com/Ebubekiryzc/GitHubImages/master/HRMS/Readme/Component%20Diagram.png)
+
+<hr>
 
 ## Usage
 
