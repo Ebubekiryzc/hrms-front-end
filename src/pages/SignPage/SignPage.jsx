@@ -15,7 +15,6 @@ import Browsing from "../../assets/Browsing.svg";
 /*  
   TODO: scss dönüşümleri ileride yapılacak
   TODO: Burada bir handle mekanizması kurulabilir ve buradaki formlar componentlere ayrılabilir
-  TODO: Media kısmında oynama yapılacak tam responsive değil!
   TODO: Java tarafındaki yearOfBirth tarih olarak düzeltilecek, buradaki doğrulama sistemine de bir tarih girilmesi şart koşulacak
 */
 export default function SignPage() {
@@ -59,8 +58,8 @@ export default function SignPage() {
       .max(11, "Must be exact 11 character")
       .required("National id field cannot be empty"),
     yearOfBirth: Yup.number()
-    .typeError("Must contain only numbers")
-    .required("Year of birth field cannot be empty"),
+      .typeError("Must contain only numbers")
+      .required("Year of birth field cannot be empty"),
   });
 
   const activePanelRef = useRef(null);
