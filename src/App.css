@@ -1,8 +1,192 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
-/* body {
+:root {
+  --main-color: #52b1f3;
+  --color-1: #4481eb;
+  --color-2: #4d84e2;
+  --color-3: #04befe;
+  --color-4: #44e5e7;
+  --color-5: #73fbd3;
+  --color-6: #4a8fe7;
+  --color-7: #0b465a;
+  --color-8: #fcba04;
+  --color-9: #f93943;
+  --header-color: #444444;
+  --button-hover: #7fc8f8;
+  --input-field-bg-grey: #f0f0f0;
+  --input-field-bg-grey-to-dark: var(--input-field-bg-grey);
+  --custom-toggle-button-to-dark: #ffffff;
+  --placeholder-color: #acacac;
+  --error-text: rgb(231, 0, 0);
+  --bg-dark: #2b2c2f;
+  --main-to-dark-color: var(--main-color);
+  --dark-to-main-color: var(--bg-dark);
+  --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
+  --black-900: #000000;
+  --black-800: #212121;
+  --black-700: #464646;
+  --black-400: #555555;
+  --black-100: #f7f7f7;
+  --black-000: #ffffff;
+  --black-alpha-300: rgba(0, 0, 0, 0.015);
+  --black-alpha-100: rgba(0, 0, 0, 0.05);
+}
+
+@keyframes spin_01 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounceTop_01 {
+  0%,
+  100% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse_01 {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    transform: scale(1.01);
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 2555, 0);
+  }
+}
+
+@keyframes pulse_02 {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(4, 190, 254, 0.2);
+  }
+  70% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 2555, 0);
+  }
+}
+
+@keyframes zoomInOut_01 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.effect-wrap .effect {
+  position: absolute;
+  z-index: -1;
+}
+
+.effect-wrap .effect-1 {
+  left: 20%;
+  top: 20%;
+  font-size: 20px;
+  color: var(--color-2);
+  animation: spin_01 5s linear infinite;
+}
+
+.effect-wrap .effect-2 {
+  right: 20%;
+  top: 10%;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.5);
+  animation: spin_01 7s linear infinite;
+}
+
+.effect-wrap .effect-3 {
+  left: 5%;
+  bottom: 30%;
+  font-size: 25px;
+  color: var(--color-4);
+  animation: bounceTop_01 3s linear infinite;
+}
+
+.effect-wrap .effect-4 {
+  right: 15%;
+  bottom: 30%;
+  font-size: 25px;
+  color: var(--color-8);
+  animation: bounceTop_01 3s linear infinite;
+}
+
+.effect-wrap .effect-5 {
+  right: 20%;
+  top: 10%;
+  font-size: 25px;
+  color: var(--color-9);
+  animation: spin_01 7s linear infinite;
+}
+
+.section-padding {
+  padding: 80px;
+}
+
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-size: 40px;
+  color: var(--black-900);
+  font-weight: 700;
+  text-align: center;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Roboto,"Segoe UI", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
+}
+
+.section-title h2 span {
+  color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+  .section-title h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-title h2 {
+    font-size: 30px;
+  }
+}
+
+.App {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  overflow-x: hidden;
+  background-color: var(--black-000);
+}
+
+.App.dark {
+  background-color: var(--bg-dark);
+  --black-100: var(--black-800);
+  --black-000: var(--bg-dark);
+  --main-to-dark-color: var(--bg-dark);
+  --dark-to-main-color: var(--main-color);
+  --shadow-black-100: var(--shadow-black-300);
+  --black-alpha-100: rgba(0, 0, 0, 0.5);
+  --black-900: #ffffff;
+  --black-400: #bbbbbb;
+  --input-field-bg-grey-to-dark: var(--header-color);
+  --custom-toggle-button-to-dark: var(--header-color);
+}
