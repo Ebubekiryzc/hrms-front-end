@@ -2,11 +2,11 @@
   width: 120px;
   height: 49px;
   line-height: 35px;
-  border: 1px solid rgba(226, 226, 226, 0.123) !important;
+  border: 1px solid var(--black-alpha-300) !important;
   border-radius: 49px;
   cursor: pointer;
-  background-color: #ffffff;
-  color: rgb(70, 70, 70);
+  background-color: var(--custom-toggle-button-to-dark);
+  color: var(--placeholder-color);
   text-transform: uppercase;
   font-weight: 600;
   margin: 10px 0;
@@ -19,12 +19,10 @@
 }
 
 .toggleButton .customButton:hover {
-  background-color: #7fc8f8 !important;
-  color: rgb(255, 255, 255) !important;
+  background-color: var(--button-hover) !important;
 }
 
 .toggleButton .customButton:active,
 .active {
-  background-color: #52b1f3 !important;
-  color: rgb(255, 255, 255) !important;
+  background-color: var(--main-color) !important;
 }
