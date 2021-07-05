@@ -1,14 +1,17 @@
-import { React, useState, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import { ButtonGroup, ToggleButton } from "react-bootstrap";
 import "./EYFormToggleButton.css";
 
 export default function EYFormToggleButton({ onSelection, ...props }) {
   const [radioValue, setRadioValue] = useState();
   const properties = Object.values(props);
-  
-  const handleSelection = useCallback(event=> {
-    onSelection(event.target.value)
-  }, [onSelection])
+
+  const handleSelection = useCallback(
+    (event) => {
+      onSelection(event.target.value);
+    },
+    [onSelection]
+  );
 
   return (
     <div className="toggleButton">
