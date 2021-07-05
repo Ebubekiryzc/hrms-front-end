@@ -1,22 +1,17 @@
-import { React, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 
 import "./SignPageStyle.css";
 
-import EYFormInput from "../../utilities/customFormComponents/EYFormInput";
+import EYFormInput from "../../utilities/customComponents/EYFormInput";
 
-import EYFormToggleButton from "../../utilities/customFormComponents/ToggleButton/EYFormToggleButton";
+import EYFormToggleButton from "../../utilities/customComponents/ToggleButton/EYFormToggleButton";
 
 import Hello from "../../assets/Hello.svg";
 
 import Browsing from "../../assets/Browsing.svg";
 
-/*  
-  TODO: scss dönüşümleri ileride yapılacak
-  TODO: Burada bir handle mekanizması kurulabilir ve buradaki formlar componentlere ayrılabilir
-  TODO: Java tarafındaki yearOfBirth tarih olarak düzeltilecek, buradaki doğrulama sistemine de bir tarih girilmesi şart koşulacak
-*/
 export default function SignPage() {
   const [userTypeSelection, setUserTypeSelection] = useState();
 
