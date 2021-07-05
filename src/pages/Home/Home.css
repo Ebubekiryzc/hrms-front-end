@@ -1,0 +1,400 @@
+.home {
+  min-height: 100vh;
+  padding: 150px 0;
+  background-color: var(--main-to-dark-color);
+  border-radius: 0 0 200px 0;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.home-text h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 20px;
+}
+
+.home-text p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 300;
+}
+
+.home-img {
+  position: relative;
+}
+
+.home-img .circle {
+  position: absolute;
+  z-index: 1;
+  height: 400px;
+  width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-img .circle::before {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  left: 30px;
+  top: 30px;
+  transform-origin: 170px 170px;
+  animation: spin_01 10s linear infinite;
+}
+
+.home-img img {
+  /* max-width: 250px; Burası bende farklı */
+  width: 100%;
+  animation: bounceTop_01 3s ease infinite;
+}
+
+.search.btn.btn-primary,
+.search.form-control,
+.home-overlay .browse-all-button button {
+  background-color: var(--black-000);
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  color: var(--dark-to-main-color);
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.5 ease;
+  box-shadow: var(--shadow-black-100);
+  font-weight: 500;
+}
+
+.home .search.form-control:focus {
+  box-shadow: none;
+  color: var(--main-color);
+}
+
+.home .search.btn.btn-primary {
+  animation: pulse_01 3s ease infinite;
+}
+
+.home .search.btn.btn-primary:focus {
+  box-shadow: var(--shadow-black-300);
+}
+
+.home .search.btn.btn-primary:hover {
+  color: var(--black-000);
+  background-color: var(--main-color);
+  animation: none;
+  box-shadow: var(--shadow-black-100);
+}
+
+.home .search.input-group {
+  margin-top: 40px;
+}
+
+/* Featured Advs section */
+.featured-advertisement .featured-advertisement-carousel .featured-item.card {
+  box-shadow: var(--shadow-black-100);
+  background-color: var(--black-000);
+  margin: 15px;
+  border: none;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.featured-advertisement
+  .featured-advertisement-carousel
+  .featured-item.card::before,
+.featured-advertisement
+  .featured-advertisement-carousel
+  .featured-item.card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.featured-advertisement
+  .featured-advertisement-carousel
+  .featured-item.card::before {
+  height: 20px;
+  width: 20px;
+  background-color: var(--color-8);
+  left: -20px;
+  top: 40%;
+}
+
+.featured-advertisement
+  .featured-advertisement-carousel
+  .featured-item.card:hover::before {
+  left: 10px;
+  opacity: 1;
+}
+
+.featured-advertisement
+  .featured-advertisement-carousel
+  .featured-item.card::after {
+  height: 20px;
+  width: 20px;
+  background-color: var(--color-9);
+  right: -30px;
+  top: 80%;
+}
+
+.featured-advertisement
+  .featured-advertisement-carousel
+  .featured-item.card:hover::after {
+  right: -8px;
+  opacity: 1;
+}
+
+.featured-advertisement
+  .featured-advertisement-carousel
+  .react-multi-carousel-list
+  .react-multi-carousel-dot-list {
+  padding: 0 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.featured-advertisement
+  .featured-advertisement-carousel
+  .react-multi-carousel-list
+  .react-multi-carousel-dot-list
+  .react-multi-carousel-dot
+  button {
+  height: 8px;
+  width: 24px;
+  background-color: #dddddd;
+  border: none;
+  display: inline-block;
+  margin: 0 4px;
+  border-radius: 5px;
+}
+
+.featured-advertisement
+  .featured-advertisement-carousel
+  .react-multi-carousel-list
+  .react-multi-carousel-dot-list
+  .react-multi-carousel-dot.react-multi-carousel-dot--active
+  button {
+  background-color: var(--main-color) !important;
+}
+
+.featured-advertisement
+  .featured-advertisement-carousel
+  .featured-item.card
+  .rounded-circle {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.featured-advertisement
+  .featured-advertisement-carousel
+  .featured-item.card
+  .card-text {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: var(--black-400);
+}
+
+.featured-advertisement
+  .featured-advertisement-carousel
+  .featured-item.card
+  .card-title.h5 {
+  font-size: 22px;
+  margin: 0 0 20px;
+  color: var(--black-900);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.home-overlay .browse-all-button button {
+  background-color: var(--main-color);
+  margin-top: 30px;
+  color: var(--black-000);
+  border-radius: 5%;
+  animation: pulse_02 3s infinite ease;
+}
+
+.home-overlay .browse-all-button button:hover {
+  background-color: var(--black-000);
+  color: var(--main-color);
+  outline: 1px solid var(--main-color);
+  animation: none;
+}
+
+/* Featured Jobs section */
+.featured-jobs {
+  background-color: var(--black-100);
+}
+
+.featured-jobs .featured-jobs-img img {
+  max-width: 600px;
+  width: 100%;
+  animation: bounceTop_01 3s ease infinite;
+}
+
+.featured-jobs .section-title {
+  margin-bottom: 20px;
+}
+.featured-jobs .section-title h2 {
+  text-align: left;
+}
+
+.featured-jobs .featured-jobs-text {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--black-400);
+  margin: 0 0 15px;
+  font-weight: 300;
+}
+
+.featured-jobs-item {
+  padding: 30px;
+  text-align: center;
+  box-shadow: var(--shadow-black-100);
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.featured-jobs-item h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.featured-jobs-item span,
+.create-account-banner .create-banner-item span {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+  line-height: 26px;
+  display: block;
+  color: #ffffff;
+}
+
+.featured-jobs-item.style-1 {
+  background-color: var(--color-9);
+}
+.featured-jobs-item.style-2 {
+  background-color: var(--color-3);
+}
+.featured-jobs-item.style-3 {
+  background-color: var(--color-2);
+}
+.featured-jobs-item.style-4 {
+  background-color: var(--color-8);
+}
+
+/* create-account-banner section */
+.create-account-banner {
+  position: relative;
+  z-index: 1;
+}
+
+.create-account-banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--black-000);
+}
+
+.create-account-banner .section-title span {
+  color: var(--main-color);
+}
+
+.create-account-banner .create-banner-item {
+  background-color: var(--color-9);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-black-100);
+  animation: pulse_02 3s ease-in-out infinite;
+}
+
+.create-account-banner .create-banner-item:hover {
+  background-color: var(--main-color);
+}
+
+.create-account-banner .create-banner-item h3 {
+  color: #ffffff;
+  margin: 0 100px;
+  margin-bottom: 10px;
+}
+
+.create-account-banner .create-banner-item:hover h3 {
+  color: var(--color-7);
+}
+
+.create-account-banner .create-banner-item span {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .home-img .circle {
+    height: 320px;
+    width: 320px;
+  }
+  .home-img .circle::before {
+    left: 18px;
+    top: 18px;
+    transform-origin: 142px 142px;
+  }
+  .home-text h1 {
+    font-size: 40px;
+  }
+  .featured-jobs-item{
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-text {
+    margin-bottom: 80px;
+  }
+  .featured-jobs-img img{
+    margin-bottom: 30px ;
+  }
+  .featured-jobs .section-title h2{
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .home-text h1 {
+    font-size: 30px;
+  }
+  .home-text p {
+    font-size: 16px;
+  }
+  .home-img,
+  .home-img .circle {
+    display: none;
+  }
+}
