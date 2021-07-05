@@ -10,7 +10,7 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: var(--black-000);
   overflow: hidden;
 }
 
@@ -20,7 +20,7 @@
   width: 2000px;
   height: 2000px;
   border-radius: 50%;
-  background: linear-gradient(-45deg, #4481eb, #04befe);
+  background: linear-gradient(-45deg,var(--color-1), var(--color-3));
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
@@ -47,7 +47,7 @@
   z-index: 5;
 }
 
-Form {
+Form.sign-in-form, Form.sign-up-form{
   font-family: "Poppins", sans-serif;
   display: flex;
   align-items: center;
@@ -72,7 +72,7 @@ Form.sign-up-form {
 .title {
   font-size: 2.2rem;
   font-weight: bold;
-  color: #444;
+  color: var(--black-400);
   margin-bottom: 10px;
 }
 
@@ -80,7 +80,7 @@ Form.sign-up-form {
   max-width: 380px;
   width: 100%;
   height: 55px;
-  background-color: #f0f0f0;
+  background-color: var(--input-field-bg-grey-to-dark);
   margin: 10px 0px;
   border-radius: 55px;
   display: grid;
@@ -91,7 +91,7 @@ Form.sign-up-form {
 .input-field .i {
   text-align: center;
   line-height: 55px;
-  color: #acacac;
+  color: var(--placeholder-color);
   font-size: 1.1rem;
 }
 
@@ -109,13 +109,13 @@ Form.sign-up-form {
 }
 
 .input-field input::placeholder {
-  color: #aaa;
+  color: var(--placeholder-color);;
   font-weight: 500;
 }
 
 .input-field .error {
   position: absolute;
-  color: rgb(231, 0, 0);
+  color: var(--error-text);
   font-size: 0.8em;
 }
 
@@ -126,8 +126,8 @@ Form.sign-up-form {
   outline: none;
   border-radius: 49px;
   cursor: pointer;
-  background-color: #52b1f3;
-  color: #fff;
+  background-color: var(--main-color);
+  color: #ffffff;
   text-transform: uppercase;
   text-align: center !important;
   font-weight: 600;
@@ -136,8 +136,8 @@ Form.sign-up-form {
 }
 
 .no-bootstrap-container .btn:hover {
-  background-color: #4d84e2;
-  color: #fff;
+  background-color: var(--color-2);
+  color: #ffffff;
 }
 
 .no-bootstrap-container .btn:focus {
@@ -175,7 +175,7 @@ Form.sign-up-form {
 }
 
 .panel .content {
-  color: #fff;
+  color: #ffffff;
   transition: 0.9s 0.6s ease-in-out;
 }
 
@@ -193,7 +193,7 @@ Form.sign-up-form {
 .btn.transparent {
   margin: 0;
   background: none;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   width: 130px;
   height: 41px;
   font-weight: 600;
