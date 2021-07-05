@@ -1,4 +1,48 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faUser ,faLock, faEnvelope, faBuilding, faGlobe, faPhone, faQuoteRight, faIdCard, faBirthdayCake} from '@fortawesome/free-solid-svg-icons'
+import {
+  faUser,
+  faLock,
+  faEnvelope,
+  faBuilding,
+  faGlobe,
+  faPhone,
+  faQuoteRight,
+  faIdCard,
+  faBirthdayCake,
+  faSearch,
+  faPlus,
+  faCircleNotch,
+  faLaptopCode,
+  faChartLine,
+  faSwimmer,
+  faUtensils,
+  faBars,
+  faMoon,
+  faSun,
+  faSignOutAlt,
+  faInfo,
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faUser, faLock, faEnvelope, faBuilding, faGlobe, faPhone, faQuoteRight, faIdCard, faBirthdayCake);
+library.add(
+  faUser,
+  faLock,
+  faEnvelope,
+  faBuilding,
+  faGlobe,
+  faPhone,
+  faQuoteRight,
+  faIdCard,
+  faBirthdayCake,
+  faSearch,
+  faPlus,
+  faCircleNotch,
+  faLaptopCode,
+  faChartLine,
+  faSwimmer,
+  faUtensils,
+  faBars,
+  faMoon,
+  faSun,
+  faSignOutAlt,
+  faInfo
+);
