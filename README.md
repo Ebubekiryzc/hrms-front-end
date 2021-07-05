@@ -7,11 +7,18 @@
 <details>
     <summary> <b> <em> Click Here </em> </b> </summary>
 
+- [Design](#design)
 - [First Commit](#first-commit)
+- [Second Commit](#second-commit)
 - [Component Diagram](#component-diagram)
 - [Usage](#usage)
 
 </details>
+<hr>
+
+## Design
+![design](https://raw.githubusercontent.com/Ebubekiryzc/GitHubImages/master/HRMS/Readme/hrms-front-end-design.png)
+
 <hr>
 
 ## First Commit
@@ -21,6 +28,14 @@
 <li><a>Customized according to <b>Multi Layered Architecture.</b></a></li>
 <li><a>Services written for all API Controllers</a></li>
 <li><a>Component diagram created.</a></li>
+</ul>
+
+## Second Commit
+
+<ul>
+<li><a>Visual design for Navbar, SignPage, App, Home page done.</a></li>
+<li><a>Created custom form components.</a></li>
+<li><a>Dark mode added.</a></li>
 </ul>
 
 ## Component Diagram
