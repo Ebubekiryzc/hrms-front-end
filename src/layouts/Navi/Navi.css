@@ -1,0 +1,177 @@
+.navbar {
+  font-weight: 600;
+  background-color: transparent;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+
+.navbar.navbar-shrink {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--main-color);
+  padding: 10px 0 !important;
+}
+
+.navbar > .container {
+  padding: 0 15px;
+}
+
+.navbar .navbar-brand {
+  font-size: 30px;
+  color: var(--black-000);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.navbar .nav-item {
+  margin-left: 40px;
+}
+
+.navbar .ms-auto.navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400px;
+  padding: 5px 0;
+  position: relative;
+}
+
+.navbar .ms-auto.navbar-nav .nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+  transform: scale(0);
+}
+
+.navbar .ms-auto.navbar-nav .nav-item .nav-link.active {
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
+.navbar .ms-auto.navbar-nav .nav-item .nav-link.active::before,
+.navbar .ms-auto.navbar-nav .nav-item .nav-link:hover::before {
+  transform: scale(1);
+}
+
+.navbar .ms-auto.navbar-nav .nav-item .avatar-img {
+  width: 25px;
+  height: 25px;
+  border: 2px solid var(--dark-to-main-color);
+}
+
+.navbar .ms-auto.navbar-nav .nav-item .sign-in-btn,
+.navbar .ms-auto.navbar-nav .nav-item .sign-up-btn {
+  margin-left: 20px;
+  background: var(--main-to-dark-color);
+  border: 2px solid #ffffff;
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.navbar .ms-auto.navbar-nav .nav-item .sign-up-btn {
+  background: var(--dark-to-main-color);
+  border: 2px solid #ffffff;
+}
+
+.dark .navbar.navbar-shrink .ms-auto.navbar-nav .nav-item .sign-in-btn{
+  background: var(--dark-to-main-color);
+}
+.dark .navbar.navbar-shrink .ms-auto.navbar-nav .nav-item .sign-up-btn {
+  background: var(--main-to-dark-color);
+}
+
+.navbar .ms-auto.navbar-nav .nav-item .user-name {
+  padding-left: 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar .ms-auto.navbar-nav .nav-item .dropdown-menu {
+  background-color: var(--main-to-dark-color);
+  border: none;
+  box-shadow: var(--shadow-black-100);
+  color: #ffffff;
+}
+
+.navbar .ms-auto.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  background-color: var(--main-to-dark-color);
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.navbar .ms-auto.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: var(--button-hover) !important;
+}
+
+.navbar .ms-auto.navbar-nav .nav-item .dropdown-menu .dropdown-item:focus,
+.navbar .ms-auto.navbar-nav .nav-item .dropdown-menu .dropdown-item.active {
+  background-color: var(--dark-to-main-color) !important;
+}
+
+.navbar .ms-auto.navbar-nav .nav-item .custom-dropdown-item-text {
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .navbar-toggler {
+    background-color: var(--dark-to-main-color) !important;
+    box-shadow: var(--shadow-black-300);
+    height: 34px;
+    width: 44px;
+    padding: 0;
+  }
+  .navbar-toggler svg {
+    font-size: 17px;
+    color: #ffffff;
+  }
+  .navbar-nav {
+    background-color: var(--dark-to-main-color);
+    box-shadow: var(--shadow-black-300);
+  }
+
+  .navbar .ms-auto.navbar-nav .nav-item .dropdown-menu {
+    background-color: var(--dark-to-main-color);
+    outline: none;
+    border: none;
+  }
+
+  .navbar .ms-auto.navbar-nav .nav-item .nav-link {
+    color: #ffffff;
+  }
+
+  .navbar .ms-auto.navbar-nav .nav-item .nav-link.active {
+    color: #ffffff !important;
+  }
+
+  .navbar .ms-auto.navbar-nav .nav-item .nav-link::before {
+    background-color: #ffffff !important;
+  }
+
+  .navbar .nav-item {
+    margin: 0;
+    padding: 5px 15px;
+  }
+
+  .navbar.navbar-shrink .navbar-toggler,
+  .navbar.navbar-shrink .navbar-nav {
+    background-color: var(--main-to-dark-color) !important;
+  }
+
+  .navbar .ms-auto.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    background-color: var(--dark-to-main-color);
+  }
+
+  .navbar .ms-auto.navbar-nav .nav-item .dropdown-menu .dropdown-item:focus,
+  .navbar .ms-auto.navbar-nav .nav-item .dropdown-menu .dropdown-item.active {
+    background-color: var(--main-to-dark-color) !important;
+  }
+}
