@@ -29,4 +29,7 @@ export default class AuthService {
       yearOfBirth,
     });
   }
+  login({ email, password }) {
+    return axios.post(`${controllerUrl}/logIn`, { email, password });
+  }
 }
