@@ -1,0 +1,98 @@
+.page-title {
+  width: 100vw;
+  height: 40vh;
+  background-color: var(--main-to-dark-color);
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+
+.page-title h1 {
+  display: block;
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  margin-bottom: 10px !important;
+}
+
+.text-description-content {
+  position: relative;
+  z-index: 1;
+}
+
+.text-description-content p {
+  font-size: 20px;
+  font-weight: normal;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: var(--black-900);
+}
+
+/* Why HRMS */
+
+.why-hrms {
+  background-color: var(--black-100);
+  text-align: center;
+}
+
+.why-hrms .why-hrms-cards {
+  margin-top: 2rem;
+}
+
+.why-hrms .why-hrms-cards .card {
+  border: none;
+  background-color: var(--black-100);
+  text-align: center;
+  width: 300px;
+  color: var(--black-400);
+  margin: 75px 0;
+}
+
+.why-hrms .why-hrms-cards .card .card-icon {
+  font-size: 40px;
+  transform: scale(1);
+  transition: all 1s ease;
+  color: var(--dark-to-main-color);
+  margin-bottom: 15px;
+}
+
+.why-hrms .why-hrms-cards .card .card-icon.usertie {
+  color: var(--black-400);
+}
+
+.why-hrms .why-hrms-cards .card .card-icon.hourglass {
+  color: var(--color-10);
+}
+
+.why-hrms .why-hrms-cards .card .card-icon.bolt {
+  color: var(--color-8);
+}
+
+.why-hrms .why-hrms-cards .card .card-icon.check {
+  color: var(--color-11);
+}
+
+.why-hrms .why-hrms-cards .card .card-icon.thumbs-up {
+  color: var(--color-9);
+}
+
+.why-hrms .why-hrms-cards .card .card-icon:hover {
+  transform: scale(1.1);
+}
+
+.why-hrms .why-hrms-cards .card .card-header-text {
+  color: var(--black-900);
+  font-weight: 600;
+}
+
+@media (max-width: 570px){
+    .why-hrms .why-hrms-cards .col-6{
+        width: 100% !important;
+    }
+}
