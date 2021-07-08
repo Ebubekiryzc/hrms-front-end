@@ -28,7 +28,7 @@ export default function SignPage() {
     password: "",
     confirmPassword: "",
     companyName: "",
-    website: "",
+    webSite: "",
     phone: "",
     firstName: "",
     lastName: "",
