@@ -1,4 +1,4 @@
-.page-title {
+.about-us .page-title {
   width: 100vw;
   height: 40vh;
   background-color: var(--main-to-dark-color);
@@ -6,7 +6,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
 }
 
-.page-title h1 {
+.about-us .page-title h1 {
   display: block;
   width: 100%;
   position: absolute;
@@ -21,12 +21,12 @@
   margin-bottom: 10px !important;
 }
 
-.text-description-content {
+.about-us .text-description-content {
   position: relative;
   z-index: 1;
 }
 
-.text-description-content p {
+.about-us .text-description-content p {
   font-size: 20px;
   font-weight: normal;
   font-family: "Poppins", sans-serif;
@@ -36,16 +36,16 @@
 
 /* Why HRMS */
 
-.why-hrms {
+.about-us .why-hrms {
   background-color: var(--black-100);
   text-align: center;
 }
 
-.why-hrms .why-hrms-cards {
+.about-us .why-hrms .why-hrms-cards {
   margin-top: 2rem;
 }
 
-.why-hrms .why-hrms-cards .card {
+.about-us .why-hrms .why-hrms-cards .card {
   border: none;
   background-color: var(--black-100);
   text-align: center;
@@ -54,7 +54,7 @@
   margin: 75px 0;
 }
 
-.why-hrms .why-hrms-cards .card .card-icon {
+.about-us .why-hrms .why-hrms-cards .card .card-icon {
   font-size: 40px;
   transform: scale(1);
   transition: all 1s ease;
@@ -62,37 +62,37 @@
   margin-bottom: 15px;
 }
 
-.why-hrms .why-hrms-cards .card .card-icon.usertie {
+.about-us .why-hrms .why-hrms-cards .card .card-icon.usertie {
   color: var(--black-400);
 }
 
-.why-hrms .why-hrms-cards .card .card-icon.hourglass {
+.about-us .why-hrms .why-hrms-cards .card .card-icon.hourglass {
   color: var(--color-10);
 }
 
-.why-hrms .why-hrms-cards .card .card-icon.bolt {
+.about-us .why-hrms .why-hrms-cards .card .card-icon.bolt {
   color: var(--color-8);
 }
 
-.why-hrms .why-hrms-cards .card .card-icon.check {
+.about-us .why-hrms .why-hrms-cards .card .card-icon.check {
   color: var(--color-11);
 }
 
-.why-hrms .why-hrms-cards .card .card-icon.thumbs-up {
+.about-us .why-hrms .why-hrms-cards .card .card-icon.thumbs-up {
   color: var(--color-9);
 }
 
-.why-hrms .why-hrms-cards .card .card-icon:hover {
+.about-us .why-hrms .why-hrms-cards .card .card-icon:hover {
   transform: scale(1.1);
 }
 
-.why-hrms .why-hrms-cards .card .card-header-text {
+.about-us .why-hrms .why-hrms-cards .card .card-header-text {
   color: var(--black-900);
   font-weight: 600;
 }
 
-@media (max-width: 570px){
-    .why-hrms .why-hrms-cards .col-6{
-        width: 100% !important;
-    }
+@media (max-width: 570px) {
+  .about-us .why-hrms .why-hrms-cards .col-6 {
+    width: 100% !important;
+  }
 }
