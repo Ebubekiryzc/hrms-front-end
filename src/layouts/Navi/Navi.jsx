@@ -5,16 +5,21 @@ import NaviItem from "./NaviItem";
 import SignIn from "./Tools/SignIn";
 import SignOut from "./Tools/SignOut";
 import "./Navi.css";
+import { useHistory } from "react-router-dom";
 
 export default function Navi({ ...props }) {
   const [navbarShrink, setNavbarShrink] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
+  const history = useHistory();
+
   function handleSignOut() {
     setIsAuthenticated(false);
+    history.push("/");
   }
 
   function handleSignIn() {
+    history.push("/sign")
     setIsAuthenticated(true);
   }
 
@@ -25,6 +30,7 @@ export default function Navi({ ...props }) {
       setNavbarShrink(false);
     }
   };
+  
   window.addEventListener("scroll", changeBackground);
   return (
     <Navbar
