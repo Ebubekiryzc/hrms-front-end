@@ -21,6 +21,12 @@ import {
   faSun,
   faSignOutAlt,
   faInfo,
+  faAsterisk,
+  faUserTie,
+  faHourglassHalf,
+  faBolt,
+  faCheckCircle,
+  faThumbsUp
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -44,5 +50,11 @@ library.add(
   faMoon,
   faSun,
   faSignOutAlt,
-  faInfo
+  faInfo,
+  faAsterisk,
+  faUserTie,
+  faHourglassHalf,
+  faBolt,
+  faCheckCircle,
+  faThumbsUp
 );
