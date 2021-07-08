@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SearchBar from "../../layouts/Navi/Tools/SearchBar/SearchBar";
 import EYMultiCardCarousel from "../../utilities/customComponents/EYMultiCardCarousel";
 import EYItem from "../../utilities/customComponents/EYItem";
-import Footer from "../../layouts/Footer/Footer";
 import Search from "../../assets/Search.svg";
 import JobInterview from "../../assets/JobInterview.svg";
 import "./Home.css";
@@ -25,10 +24,10 @@ export default function Home() {
                 <h1>Find your job in a super limited time.</h1>
                 <p>
                   How about finding your dream job in minutes with your
-                  well-prepared resume? <br />With the help of our site, prepare your
-                  resume well and get one step closer to your dream job,
-                  research companies in your field and apply to many job
-                  postings for free.
+                  well-prepared resume? <br />
+                  With the help of our site, prepare your resume well and get
+                  one step closer to your dream job, research companies in your
+                  field and apply to many job postings for free.
                 </p>
                 <SearchBar
                   className="search"
@@ -94,9 +93,10 @@ export default function Home() {
               <div className="featured-jobs-text">
                 <p>
                   If you think the business world needs you and your skills, why
-                  not filter the job postings that suit you best? <br /> Take the first
-                  step by choosing your professional field and apply for free to
-                  the postings that you think are most suitable for you.
+                  not filter the job postings that suit you best? <br /> Take
+                  the first step by choosing your professional field and apply
+                  for free to the postings that you think are most suitable for
+                  you.
                 </p>
               </div>
               <Row className="align-items-center">
