@@ -4,10 +4,13 @@ import UserDashboard from "./layouts/Dashboards/UserDashboard";
 import DarkMode from "./layouts/Tools/DarkMode/DarkMode";
 import Footer from "./layouts/Footer/Footer";
 import "./App.css";
+import { useLocation } from "react-router-dom";
 
 export default function App() {
   const [themeMode, setThemeMode] = useState("moon");
   const theme = useRef(null);
+
+  let location = useLocation();
 
   const changeTheme = () => {
     if (theme.current.className === "App") {
@@ -21,10 +24,12 @@ export default function App() {
 
   return (
     <div className="App" ref={theme}>
-      <Navi logo="HRMS" />
-      <DarkMode changeTheme={changeTheme} icon={themeMode} />
-      <UserDashboard />
-      <Footer />
+      <div className="content-wrapper">
+        {location.pathname !== "/sign" ? <Navi logo="HRMS" /> : <></>}
+        <DarkMode changeTheme={changeTheme} icon={themeMode} />
+        <UserDashboard />{" "}
+      </div>
+      {location.pathname !== "/sign" ? <Footer /> : <></>}
     </div>
   );
 }
