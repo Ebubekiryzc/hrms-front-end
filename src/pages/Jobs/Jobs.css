@@ -1,0 +1,36 @@
+.jobs {
+  min-height: 100vh;
+  background-color: var(--black-000);
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.jobs-text h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--dark-to-main-color);
+  margin: 0 0 20px;
+}
+
+.jobs-text p {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--black-900);
+  margin: 0;
+  font-weight: 300;
+  text-align: left;
+}
+
+.jobs-img {
+  position: relative;
+}
+
+.jobs-img img {
+  width: 100%;
+  animation: pulse_03 3s ease infinite;
+}
+
+.job-categories.section-padding{
+  padding-top: 0px;
+}
