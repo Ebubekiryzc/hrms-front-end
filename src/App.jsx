@@ -5,6 +5,7 @@ import DarkMode from "./layouts/Tools/DarkMode/DarkMode";
 import Footer from "./layouts/Footer/Footer";
 import "./App.css";
 import { useLocation } from "react-router-dom";
+import GoToTop from "./utilities/customComponents/GoToTop";
 
 export default function App() {
   const [themeMode, setThemeMode] = useState("moon");
@@ -30,6 +31,7 @@ export default function App() {
         <UserDashboard />{" "}
       </div>
       {location.pathname !== "/sign" ? <Footer /> : <></>}
+      <GoToTop />
     </div>
   );
 }
