@@ -1,0 +1,24 @@
+.ey-item {
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .ey-item h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .ey-item  span{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+    line-height: 26px;
+    display: block;
+    color: #ffffff;
+  }
