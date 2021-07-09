@@ -27,31 +27,6 @@
   position: relative;
 }
 
-.home-img .circle {
-  position: absolute;
-  z-index: 1;
-  height: 400px;
-  width: 400px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.home-img .circle::before {
-  content: "";
-  position: absolute;
-  height: 60px;
-  width: 60px;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
-  left: 30px;
-  top: 30px;
-  transform-origin: 170px 170px;
-  animation: spin_01 10s linear infinite;
-}
-
 .home-img img {
   /* max-width: 250px; Burası bende farklı */
   width: 100%;
@@ -263,45 +238,6 @@
   color: var(--black-400);
   margin: 0 0 15px;
   font-weight: 300;
-}
-
-.featured-jobs-item {
-  padding: 30px;
-  text-align: center;
-  box-shadow: var(--shadow-black-100);
-  border-radius: 10px;
-  margin-top: 30px;
-  cursor: pointer;
-}
-.featured-jobs-item h3 {
-  font-size: 40px;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 0 0 5px;
-}
-
-.featured-jobs-item span,
-.create-account-banner .create-banner-item span {
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 300;
-  margin: 0;
-  line-height: 26px;
-  display: block;
-  color: #ffffff;
-}
-
-.featured-jobs-item.style-1 {
-  background-color: var(--color-9);
-}
-.featured-jobs-item.style-2 {
-  background-color: var(--color-3);
-}
-.featured-jobs-item.style-3 {
-  background-color: var(--color-2);
-}
-.featured-jobs-item.style-4 {
-  background-color: var(--color-8);
 }
 
 /* create-account-banner section */
