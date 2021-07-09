@@ -1,6 +1,6 @@
 .navbar {
   font-weight: 600;
-  background-color: transparent;
+  background-color: var(--main-color);
   padding: 20px 0;
   transition: all 0.5s ease;
 }
@@ -79,10 +79,10 @@
   border: 2px solid #ffffff;
 }
 
-.dark .navbar.navbar-shrink .ms-auto.navbar-nav .nav-item .sign-in-btn{
+.dark .navbar .ms-auto.navbar-nav .nav-item .sign-in-btn{
   background: var(--dark-to-main-color);
 }
-.dark .navbar.navbar-shrink .ms-auto.navbar-nav .nav-item .sign-up-btn {
+.dark .navbar .ms-auto.navbar-nav .nav-item .sign-up-btn {
   background: var(--main-to-dark-color);
 }
 
