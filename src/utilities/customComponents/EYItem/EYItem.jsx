@@ -1,9 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./EYItem.css";
 
 export default function EYItem(props) {
   return (
-    <div className={props.className}>
+    <div className={`ey-item ${props.className}`}>
       <h3>
         {props.h3Content === undefined ? (
           <></>
