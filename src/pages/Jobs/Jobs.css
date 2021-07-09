@@ -34,3 +34,8 @@
 .job-categories.section-padding{
   padding-top: 0px;
 }
+
+.job-categories .job-card .spanText{
+  font-size: 18px;
+  font-weight: 500;
+}
