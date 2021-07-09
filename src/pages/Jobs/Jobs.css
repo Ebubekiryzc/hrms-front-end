@@ -36,6 +36,7 @@
 }
 
 .job-categories .job-card .spanText{
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 450;
+  text-transform: none;
 }
