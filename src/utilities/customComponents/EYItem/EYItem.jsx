@@ -17,7 +17,7 @@ export default function EYItem(props) {
           <></>
         )}
       </h3>
-      <span>{props.spanText}</span>
+      <span className="spanText">{props.spanText}</span>
     </div>
   );
 }
