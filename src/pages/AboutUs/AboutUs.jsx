@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import EYItem from "../../utilities/customComponents/EYItem";
+import EYItem from "../../utilities/customComponents/EYItem/EYItem";
 import "./AboutUs.css";
 
 export default function AboutUs() {
@@ -110,7 +110,10 @@ export default function AboutUs() {
                 className="card"
                 h3Content={
                   <div>
-                    <FontAwesomeIcon icon="thumbs-up" className="card-icon thumbs-up"/>
+                    <FontAwesomeIcon
+                      icon="thumbs-up"
+                      className="card-icon thumbs-up"
+                    />
                     <br />
                     <span className="card-header-text">Verified Companies</span>
                   </div>
