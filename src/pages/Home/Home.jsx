@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SearchBar from "../../layouts/Navi/Tools/SearchBar/SearchBar";
 import EYMultiCardCarousel from "../../utilities/customComponents/EYMultiCardCarousel";
-import EYItem from "../../utilities/customComponents/EYItem";
+import EYItem from "../../utilities/customComponents/EYItem/EYItem";
 import Search from "../../assets/Search.svg";
 import JobInterview from "../../assets/JobInterview.svg";
 import "./Home.css";
@@ -102,28 +102,28 @@ export default function Home() {
               <Row className="align-items-center">
                 <Col sm="6">
                   <EYItem
-                    className="featured-jobs-item style-1"
+                    className="featured-jobs-item item-style-1"
                     h3Content={<FontAwesomeIcon icon="laptop-code" />}
                     spanText="Software Developer"
                   />
                 </Col>
                 <Col sm="6">
                   <EYItem
-                    className="featured-jobs-item style-2"
+                    className="featured-jobs-item item-style-2"
                     h3Content={<FontAwesomeIcon icon="chart-line" />}
                     spanText="Analyst"
                   />
                 </Col>
                 <Col sm="6">
                   <EYItem
-                    className="featured-jobs-item style-3"
+                    className="featured-jobs-item item-style-3"
                     h3Content={<FontAwesomeIcon icon="swimmer" />}
                     spanText="Sport"
                   />
                 </Col>
                 <Col sm="6">
                   <EYItem
-                    className="featured-jobs-item style-4"
+                    className="featured-jobs-item item-style-4"
                     h3Content={<FontAwesomeIcon icon="utensils" />}
                     spanText="Food & Beverage"
                   />
