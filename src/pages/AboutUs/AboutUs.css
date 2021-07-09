@@ -47,11 +47,26 @@
 
 .about-us .why-hrms .why-hrms-cards .card {
   border: none;
+  box-shadow: none;
   background-color: var(--black-100);
   text-align: center;
   width: 300px;
-  color: var(--black-400);
   margin: 75px 0;
+  cursor: auto;
+  padding: 0;
+}
+
+.about-us .why-hrms .why-hrms-cards .card .card-header-text{
+  color: var(--black-900);
+  font-weight: 600;
+  font-size: 24px;
+  text-align: left;
+}
+
+.about-us .why-hrms .why-hrms-cards .card .spanText{
+  color: var(--black-400);
+  text-transform: none;
+  font-weight: 400;
 }
 
 .about-us .why-hrms .why-hrms-cards .card .card-icon {
@@ -84,11 +99,6 @@
 
 .about-us .why-hrms .why-hrms-cards .card .card-icon:hover {
   transform: scale(1.1);
-}
-
-.about-us .why-hrms .why-hrms-cards .card .card-header-text {
-  color: var(--black-900);
-  font-weight: 600;
 }
 
 @media (max-width: 570px) {
