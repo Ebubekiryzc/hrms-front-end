@@ -1,9 +1,9 @@
-import React  from "react";
+import React from "react";
 import Carousel from "react-multi-carousel";
 import { Card, Image } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function EYMultiCardCarousel({ props }) {
+export default function EYMultiCardCarousel({ ...props }) {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -33,28 +33,22 @@ export default function EYMultiCardCarousel({ props }) {
       focusOnSelect={true}
       arrows={false}
       showDots={true}
-      containerClass="featured-advertisement-carousel"
     >
-      {/* {props.map((prop) => (
-        <Card className="featured-item">
-          <Card.Body>
-            <Image
-              src="https://avatars.githubusercontent.com/u/79103394?s=400&u=1680b8537e6709f6ac9b48978d6658a6f6390828&v=4"
-              roundedCircle
-            ></Image>
-            <Card.Title>Naber</Card.Title>
-            <Card.Text>
-              selamkakljsdlkjmlkmlksdafmlkasdmflkasdnflkasmndşlfkmşlkasmdflşkmalşskdmflkşasdmflşkasd
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      ))} */}
+      {/* <Card className="featured-item">
+        <Card.Body>
+          {props.cardImage.type === FontAwesomeIcon ||
+          props.cardImage.type === React.createElement("img").type ? (
+            props.cardImage
+          ) : (
+            <></>
+          )}
+          <Card.Title>Naber</Card.Title>
+          <Card.Text>Selam</Card.Text>
+        </Card.Body>
+      </Card> */}
 
       <Card className="featured-item">
         <Card.Body>
-          {
-            //TODO: Buraya if kodu yazılacak, icon gönderdiğimde icon, img gönderdiğimde img div' i açılacak.
-          }
           <Image
             src="https://avatars.githubusercontent.com/u/79103394?s=400&u=1680b8537e6709f6ac9b48978d6658a6f6390828&v=4"
             roundedCircle
@@ -67,7 +61,7 @@ export default function EYMultiCardCarousel({ props }) {
       <Card className="featured-item">
         <Card.Body>
           <Image
-            src="https://avatars.githubusercontent.com/u/79103394?s=400&u=1680b8537e6709f6ac9b48978d6658a6f6390828&v=4"
+            src="https://avatars.githubusercontent.com/u/48068865?v=4"
             roundedCircle
           ></Image>
           <Card.Title>Naber</Card.Title>

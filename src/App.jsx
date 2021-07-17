@@ -28,10 +28,21 @@ export default function App() {
       <div className="content-wrapper">
         {location.pathname !== "/sign" ? <Navi logo="HRMS" /> : <></>}
         <DarkMode changeTheme={changeTheme} icon={themeMode} />
-        <UserDashboard />{" "}
+        <UserDashboard />
       </div>
       {location.pathname !== "/sign" ? <Footer /> : <></>}
       <GoToTop />
+      {
+        //TODO: Yapılacaklar:
+        /*
+          1-) Job Advertisement Filter yapılacak.
+          2-) Find a job yapılacak.
+          3-) Post a job yapılacak.
+          4-) Admin Dashboard ayarlanacak.
+          5-) Candidate Dashboard ayarlanacak.
+          6-) Store mantığına geçilecek.
+        */
+      }
     </div>
   );
 }

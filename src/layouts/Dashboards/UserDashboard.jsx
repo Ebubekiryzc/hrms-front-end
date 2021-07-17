@@ -4,6 +4,7 @@ import AboutUs from "../../pages/AboutUs/AboutUs";
 import Home from "../../pages/Home/Home";
 import Jobs from "../../pages/Jobs/Jobs";
 import SignPage from "../../pages/SignPage/SignPage";
+import AdvertisementFilter from "../Tools/AdvertisementFilter";
 
 export default function UserDashboard() {
   return (
@@ -12,6 +13,7 @@ export default function UserDashboard() {
       <Route exact path="/jobs" component={Jobs} />
       <Route exact path="/sign" component={SignPage} />
       <Route exact path="/about" component={AboutUs} />
+      <Route exact path="/a" component={AdvertisementFilter} />
     </div>
   );
 }
