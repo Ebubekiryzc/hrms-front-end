@@ -41,6 +41,7 @@ export default function App() {
           4-) Admin Dashboard ayarlanacak.
           5-) Candidate Dashboard ayarlanacak.
           6-) Store mantığına geçilecek.
+          7-) Kontrol...
         */
       }
     </div>
