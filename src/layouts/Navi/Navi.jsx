@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import NaviItem from "./NaviItem";
 import SignIn from "./Tools/SignIn";
 import SignOut from "./Tools/SignOut";
 import "./Navi.css";
-import { useHistory } from "react-router-dom";
 
 export default function Navi({ ...props }) {
   const [navbarShrink, setNavbarShrink] = useState(false);
