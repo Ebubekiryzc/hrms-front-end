@@ -33,9 +33,7 @@
   animation: bounceTop_01 3s ease infinite;
 }
 
-.search.btn.btn-primary,
-.search.form-control,
-.home-overlay .browse-all-button button {
+.home-overlay .browse-all-button a {
   background-color: var(--black-000);
   padding: 12px 30px;
   border: none;
@@ -46,30 +44,6 @@
   transition: all 0.5 ease;
   box-shadow: var(--shadow-black-100);
   font-weight: 500;
-}
-
-.home .search.form-control:focus {
-  box-shadow: none;
-  color: var(--main-color);
-}
-
-.home .search.btn.btn-primary {
-  animation: pulse_01 3s ease infinite;
-}
-
-.home .search.btn.btn-primary:focus {
-  box-shadow: var(--shadow-black-300);
-}
-
-.home .search.btn.btn-primary:hover {
-  color: var(--black-000);
-  background-color: var(--main-color);
-  animation: none;
-  box-shadow: var(--shadow-black-100);
-}
-
-.home .search.input-group {
-  margin-top: 40px;
 }
 
 /* Featured Advs section */
@@ -199,7 +173,7 @@
   text-transform: capitalize;
 }
 
-.home-overlay .browse-all-button button {
+.home-overlay .browse-all-button a {
   background-color: var(--main-color);
   margin-top: 30px;
   color: var(--black-000);
@@ -207,7 +181,7 @@
   animation: pulse_02 3s infinite ease;
 }
 
-.home-overlay .browse-all-button button:hover {
+.home-overlay .browse-all-button a:hover {
   background-color: var(--black-000);
   color: var(--main-color);
   outline: 1px solid var(--main-color);
@@ -305,7 +279,7 @@
   .home-text h1 {
     font-size: 40px;
   }
-  .featured-jobs-item{
+  .featured-jobs-item {
     margin-bottom: 30px;
   }
 }
@@ -314,10 +288,10 @@
   .home-text {
     margin-bottom: 80px;
   }
-  .featured-jobs-img img{
-    margin-bottom: 30px ;
+  .featured-jobs-img img {
+    margin-bottom: 30px;
   }
-  .featured-jobs .section-title h2{
+  .featured-jobs .section-title h2 {
     text-align: center;
   }
 }
