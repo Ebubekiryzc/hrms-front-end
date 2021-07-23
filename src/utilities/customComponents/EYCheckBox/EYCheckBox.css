@@ -1,0 +1,26 @@
+.form-group {
+  margin-bottom: 5px;
+}
+
+.checkbox label {
+  padding-left: 10px;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.checkbox .form-check input[type="checkbox"] {
+  background-color: var(--black-700);
+}
+
+.checkbox .form-check input[type="checkbox"]:focus,
+.checkbox .form-check input[type="checkbox"]:checked {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.checkbox .form-check label{
+    color: var(--black-400);
+}
