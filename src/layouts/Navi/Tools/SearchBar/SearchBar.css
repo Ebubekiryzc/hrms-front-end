@@ -1,3 +1,45 @@
-* > .input-group{
-    max-width: 400px;
+* > .input-group {
+  max-width: 400px;
+}
+
+.search.btn.btn-primary,
+.search.form-control {
+  background-color: var(--black-000);
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  color: var(--dark-to-main-color);
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.5 ease;
+  box-shadow: var(--shadow-black-100);
+  font-weight: 500;
+}
+
+.search.form-control:focus {
+  box-shadow: none;
+  color: var(--main-color);
+}
+
+.dark .search.form-control:focus {
+  background-color: var(--black-700);
+}
+
+.search.btn.btn-primary {
+  animation: pulse_01 3s ease infinite;
+}
+
+.search.btn.btn-primary:focus {
+  box-shadow: var(--shadow-black-300);
+}
+
+.search.btn.btn-primary:hover {
+  color: var(--black-000);
+  background-color: var(--main-color);
+  animation: none;
+  box-shadow: var(--shadow-black-100);
+}
+
+.search.input-group {
+  margin-top: 40px;
 }
