@@ -42,7 +42,7 @@ export default function Jobs() {
         <Container>
           <Row className="align-items-center">
             {jobs.map((job) => (
-                <Col sm="6" key={job.id}>
+                <Col xs="6" md="4" key={job.id}>
                   <EYItem
                     className={`job-card item-style-${job.id % 5}`}
                     spanText={job.name}
