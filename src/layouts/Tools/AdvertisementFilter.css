@@ -1,0 +1,23 @@
+.filter .search{
+    margin-top: 0;
+}
+
+.filter .filter-text{
+    color: var(--dark-to-main-color);
+    padding-top: 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.filter .position-menu h6{
+    color: var(--dark-to-main-color);
+    font-weight: 500;
+}
+
+.filter .decoration-icon{
+    color: var(--color-9);
+}
+
+.dark .filter .decoration-icon{
+    color: var(--color-8);
+}
