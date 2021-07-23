@@ -12,7 +12,7 @@
   --color-8: #fcba04;
   --color-9: #f93943;
   --color-10: #6f58c9;
-  --color-11: #A5F977;
+  --color-11: #a5f977;
   --header-color: #444444;
   --button-hover: #7fc8f8;
   --input-field-bg-grey: #f0f0f0;
@@ -151,7 +151,7 @@
   animation: spin_01 3s linear infinite;
 }
 
-.effect-wrap .effect-6{
+.effect-wrap .effect-6 {
   left: 25%;
   bottom: 25%;
   font-size: 25px;
@@ -159,7 +159,7 @@
   animation: pulse_03 3s linear infinite;
 }
 
-.effect-wrap .effect-7{
+.effect-wrap .effect-7 {
   left: 15%;
   top: 0%;
   font-size: 20px;
@@ -212,7 +212,6 @@
   color: var(--main-color);
 }
 
-
 .item-style-0 {
   background-color: var(--color-10);
 }
@@ -227,6 +226,30 @@
 }
 .item-style-4 {
   background-color: var(--color-8);
+}
+
+.scrollable-list {
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.scrollable-list::-webkit-scrollbar {
+  width: 15px;
+  border-radius: 15px;
+}
+
+.scrollable-list::-webkit-scrollbar-thumb {
+  background: var(--dark-to-main-color);
+  border-radius: 15px;
+}
+
+.scrollable-list::-webkit-scrollbar-thumb:hover {
+  background: var(--black-700);
+}
+
+.scrollable-list::-webkit-scrollbar-track {
+  border: solid 2px var(--black-700);
+  border-radius: 15px;
 }
 
 @media (max-width: 767px) {
@@ -266,6 +289,6 @@
   --custom-toggle-button-to-dark: var(--header-color);
 }
 
-.content-wrapper{
-  flex:1;
+.content-wrapper {
+  flex: 1;
 }
