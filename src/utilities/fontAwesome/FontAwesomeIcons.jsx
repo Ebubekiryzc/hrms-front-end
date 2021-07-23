@@ -26,7 +26,9 @@ import {
   faHourglassHalf,
   faBolt,
   faCheckCircle,
-  faThumbsUp
+  faThumbsUp,
+  faFilter,
+  faMinus
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -56,5 +58,7 @@ library.add(
   faHourglassHalf,
   faBolt,
   faCheckCircle,
-  faThumbsUp
+  faThumbsUp,
+  faFilter,
+  faMinus
 );
