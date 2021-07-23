@@ -9,6 +9,7 @@ import "./Navi.css";
 
 export default function Navi({ ...props }) {
   const [navbarShrink, setNavbarShrink] = useState(false);
+  const [expanded, setExpanded] = useState(false)
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const history = useHistory();
@@ -38,16 +39,17 @@ export default function Navi({ ...props }) {
       fixed="top"
       className={navbarShrink ? "navbar-shrink" : ""}
       collapseOnSelect
+      onToggle={()=>{setExpanded(!expanded)}}
     >
       <Container>
         <Navbar.Brand className="logo" href="/" style={{ color: "white" }}>
           {props.logo}
         </Navbar.Brand>
-        <Navbar.Toggle>
+        <Navbar.Toggle >
           <FontAwesomeIcon icon="bars" />
         </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="/">
+        <Navbar.Collapse id="basic-navbar-nav" in={expanded}>
+          <Nav className="ms-auto" defaultActiveKey="/" onClick={()=>{setExpanded(!expanded)}}>
             <NaviItem pathAdr="/" displayName="Home" />
             <NaviItem pathAdr="/about" displayName="About us" />
             <NaviItem pathAdr="/jobadvertisements" displayName="Find a job" />
