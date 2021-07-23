@@ -161,11 +161,6 @@
     padding: 5px 15px;
   }
 
-  .navbar.navbar-shrink .navbar-toggler,
-  .navbar.navbar-shrink .navbar-nav {
-    background-color: var(--main-to-dark-color) !important;
-  }
-
   .navbar .ms-auto.navbar-nav .nav-item .dropdown-menu .dropdown-item {
     background-color: var(--dark-to-main-color);
   }
