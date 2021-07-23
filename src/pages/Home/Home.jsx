@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SearchBar from "../../layouts/Navi/Tools/SearchBar/SearchBar";
@@ -65,7 +66,9 @@ export default function Home() {
           <Row className="justify-content-center">
             <div className="browse-all-button">
               <Col md="12" className="text-center">
-                <Button>Browse All</Button>
+                <Button exact as={NavLink} to="/jobadvertisements">
+                  Browse All
+                </Button>
               </Col>
             </div>
           </Row>
@@ -131,7 +134,9 @@ export default function Home() {
                 <Row className="align-items-center">
                   <Col className="d-flex justify-content-center">
                     <div className="browse-all-button">
-                      <Button>Browse All</Button>
+                      <Button exact as={NavLink} to="/jobs">
+                        Browse All
+                      </Button>
                     </div>
                   </Col>
                 </Row>
