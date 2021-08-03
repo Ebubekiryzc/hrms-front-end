@@ -1,23 +1,39 @@
-.filter .search{
-    margin-top: 0;
+.filter .search {
+  margin-top: 0;
 }
 
-.filter .filter-text{
-    color: var(--dark-to-main-color);
-    padding-top: 10px;
-    font-size: 1.6rem;
-    font-weight: 500;
+.filter .filter-text {
+  color: var(--dark-to-main-color);
+  padding-top: 10px;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
-.filter .position-menu h6{
-    color: var(--dark-to-main-color);
-    font-weight: 500;
+.filter .position-menu h6 {
+  color: var(--dark-to-main-color);
+  font-weight: 500;
 }
 
-.filter .decoration-icon{
-    color: var(--color-9);
+.filter .decoration-icon {
+  color: var(--color-9);
 }
 
-.dark .filter .decoration-icon{
-    color: var(--color-8);
+.dark .filter .decoration-icon {
+  color: var(--color-8);
+}
+
+.filter-menu .searchBar .input-group{
+  box-shadow: none;
+  border-radius: 0px;
+}
+
+.filter-menu .searchBar .search.btn.btn-primary,
+.filter-menu .searchBar .search.form-control {
+  border: none;
+  border-radius: 0;
+  box-shadow: var(--shadow-black-70);
+  animation: none;
+  max-width: 250px;
+  max-height: 50px;
+  margin-bottom: 15px;
 }

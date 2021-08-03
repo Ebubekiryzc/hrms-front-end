@@ -28,7 +28,10 @@ import {
   faCheckCircle,
   faThumbsUp,
   faFilter,
-  faMinus
+  faMinus,
+  faTimes,
+  faMapMarkerAlt,
+  faBriefcase
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -60,5 +63,8 @@ library.add(
   faCheckCircle,
   faThumbsUp,
   faFilter,
-  faMinus
+  faMinus,
+  faTimes,
+  faMapMarkerAlt,
+  faBriefcase
 );

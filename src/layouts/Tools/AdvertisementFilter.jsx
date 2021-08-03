@@ -20,18 +20,20 @@ export default function AdvertisementFilter() {
   };
 
   const filterMenu = (
-    <>
+    <div className="filter-menu">
       <div className="border-bottom pb-2 ml-2">
         <h4 className="filter-text">Filters</h4>
       </div>
       <div className="position-menu py-2 border-bottom ml-3">
         <h6>Position</h6>
         <FontAwesomeIcon icon="minus" className="decoration-icon" />
-        <SearchBar
-          className="search"
-          placeholder="Search for a Position..."
-          buttonText="Find"
-        />
+        <div className="searchBar">
+          <SearchBar
+            data={jobs}
+            className="search"
+            placeholder="Search for a Position..."
+          />
+        </div>
         <Form className="scrollable-list">
           {jobs.map((job, index) => (
             <EYCheckBox
@@ -46,7 +48,7 @@ export default function AdvertisementFilter() {
           ))}
         </Form>
       </div>
-    </>
+    </div>
   );
 
   useEffect(() => {

@@ -23,11 +23,13 @@
   --bg-dark: #2b2c2f;
   --main-to-dark-color: var(--main-color);
   --dark-to-main-color: var(--bg-dark);
+  --shadow-black-70: 0 5px 15px rgba(0, 0, 0, 0.07);
   --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
   --shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
   --black-900: #000000;
   --black-800: #212121;
   --black-700: #464646;
+  --black-500: #333333;
   --black-400: #555555;
   --black-100: #f7f7f7;
   --black-000: #ffffff;
@@ -51,6 +53,18 @@
   }
   50% {
     transform: translateY(0px);
+  }
+}
+
+@keyframes pulse_without_scale_01{
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 2555, 0);
   }
 }
 
@@ -278,6 +292,7 @@
 .App.dark {
   background-color: var(--bg-dark);
   --black-900: #ffffff;
+  --black-500: #cccccc;
   --black-400: #bbbbbb;
   --black-100: var(--black-800);
   --black-000: var(--bg-dark);

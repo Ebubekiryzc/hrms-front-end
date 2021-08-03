@@ -13,7 +13,7 @@
   margin: 0 0 20px;
 }
 
-.job-advertisements .job-advertisement-text span {
+.job-advertisements .job-advertisement-text .highlighted-word {
   color: var(--color-8);
 }
 
@@ -33,6 +33,10 @@
 .job-advertisements .advertisements-image img {
   width: 100%;
   animation: pulse_03 3s ease infinite;
+}
+
+.job-advertisements .search{
+  max-width: 500px;
 }
 
 .job-advertisements .wave {

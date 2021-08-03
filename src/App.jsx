@@ -6,6 +6,8 @@ import Footer from "./layouts/Footer/Footer";
 import "./App.css";
 import { useLocation } from "react-router-dom";
 import GoToTop from "./utilities/customComponents/GoToTop";
+import SearchBox from "./layouts/Navi/Tools/SearchBar/SearchBox";
+import SearchBar from "./layouts/Navi/Tools/SearchBar/SearchBar";
 
 export default function App() {
   const [themeMode, setThemeMode] = useState("moon");
@@ -26,11 +28,27 @@ export default function App() {
   return (
     <div className="App" ref={theme}>
       <div className="content-wrapper">
-        {location.pathname !== "/sign" ? <Navi logo="HRMS" /> : <></>}
+        {/* {location.pathname !== "/sign" ? <Navi logo="HRMS" /> : <></>} */}
         <DarkMode changeTheme={changeTheme} icon={themeMode} />
-        <UserDashboard />
+        {/* <UserDashboard /> */}
+        <SearchBar
+          className="search"
+          inputAreas={[
+            {
+              icon: "briefcase",
+              placeholder: "Search for a Position or Employer...",
+              data: ["Anan", "Baban", "Deden", "Halan"],
+            },
+            {
+              icon: "map-marker-alt",
+              placeholder: "Search for a City...",
+              data: ["Anan2", "Baban2", "Deden2", "Halan2"],
+            },
+          ]}
+        />
+        {/* <SearchBox /> */}
       </div>
-      {location.pathname !== "/sign" ? <Footer /> : <></>}
+      {/* {location.pathname !== "/sign" ? <Footer /> : <></>} */}
       <GoToTop />
       {
         //TODO: Yapılacaklar:

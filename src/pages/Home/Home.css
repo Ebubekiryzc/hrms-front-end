@@ -8,6 +8,10 @@
   overflow-x: hidden;
 }
 
+.home .search{
+  max-width: 400px;
+}
+
 .home-text h1 {
   font-size: 45px;
   font-weight: 700;

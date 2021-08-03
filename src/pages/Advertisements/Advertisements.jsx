@@ -32,15 +32,15 @@ export default function Advertisements() {
             <Col md="7">
               <div className="job-advertisement-text">
                 <h1>
-                  Choose the one that <span>suits you best.</span>
+                  Choose the one that <span className="highlighted-word">suits you best.</span>
                 </h1>
                 <p>
                   Check out all these job advertisements and don't hesitate to
                   apply to the ones you think are most suitable for you!
                 </p>
                 <SearchBar
+                  inputAreas={[{icon: "briefcase", placeholder: "Search for a Position or Employer..."}, {icon:"map-marker-alt", placeholder: "Search for a City..."}]}
                   className="search"
-                  placeholder="Search for a Job..."
                   buttonText="Find"
                 />
               </div>
