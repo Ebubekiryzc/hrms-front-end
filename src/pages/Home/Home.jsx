@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SearchBar from "../../layouts/Navi/Tools/SearchBar/SearchBar";
+import SearchBar from "../../layouts/Tools/SearchBar/SearchBar";
 import EYMultiCardCarousel from "../../utilities/customComponents/EYMultiCardCarousel";
 import EYItem from "../../utilities/customComponents/EYItem/EYItem";
 import Search from "../../assets/Search.svg";
@@ -32,6 +32,8 @@ export default function Home() {
                 </p>
                 <SearchBar
                   className="search"
+                  data={["jobs","jobs2"]}
+                  empty="Can not find any job like this..."
                   placeholder="Search for a Job..."
                   buttonText="Find"
                 />

@@ -4,7 +4,7 @@ import { Button, Collapse, Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import JobService from "../../services/JobService";
 import EYCheckBox from "../../utilities/customComponents/EYCheckBox/EYCheckBox";
-import SearchBar from "../Navi/Tools/SearchBar/SearchBar";
+import SearchBar from "../Tools/SearchBar/SearchBar";
 import "./AdvertisementFilter.css";
 
 export default function AdvertisementFilter() {

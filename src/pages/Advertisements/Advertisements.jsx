@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SearchBar from "../../layouts/Navi/Tools/SearchBar/SearchBar";
+import SearchBar from "../../layouts/Tools/SearchBar/SearchBar";
 import EYItem from "../../utilities/customComponents/EYItem/EYItem";
 import AdvertisementFilter from "../../layouts/Tools/AdvertisementFilter";
 import JobOffers from "../../assets/Advertisement.svg";
 import JobAdvertisementService from "../../services/JobAdvertisementService";
 import "./Advertisements.css";
-
 
 export default function Advertisements() {
   const [advertisements, setAdvertisements] = useState([]);
@@ -32,14 +31,28 @@ export default function Advertisements() {
             <Col md="7">
               <div className="job-advertisement-text">
                 <h1>
-                  Choose the one that <span className="highlighted-word">suits you best.</span>
+                  Choose the one that{" "}
+                  <span className="highlighted-word">suits you best.</span>
                 </h1>
                 <p>
                   Check out all these job advertisements and don't hesitate to
                   apply to the ones you think are most suitable for you!
                 </p>
                 <SearchBar
-                  inputAreas={[{icon: "briefcase", placeholder: "Search for a Position or Employer..."}, {icon:"map-marker-alt", placeholder: "Search for a City..."}]}
+                  inputAreas={[
+                    {
+                      icon: "briefcase",
+                      data: [],
+                      placeholder: "Search for a Position or Employer...",
+                      empty: "Can not find...",
+                    },
+                    {
+                      icon: "map-marker-alt",
+                      data: [],
+                      placeholder: "Search for a City...",
+                      empty: "Can not find...",
+                    },
+                  ]}
                   className="search"
                   buttonText="Find"
                 />

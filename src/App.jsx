@@ -6,8 +6,7 @@ import Footer from "./layouts/Footer/Footer";
 import "./App.css";
 import { useLocation } from "react-router-dom";
 import GoToTop from "./utilities/customComponents/GoToTop";
-import SearchBox from "./layouts/Navi/Tools/SearchBar/SearchBox";
-import SearchBar from "./layouts/Navi/Tools/SearchBar/SearchBar";
+import SearchBar from "./layouts/Tools/SearchBar/SearchBar";
 
 export default function App() {
   const [themeMode, setThemeMode] = useState("moon");
